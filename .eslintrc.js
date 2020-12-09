@@ -16,6 +16,7 @@ module.exports = {
     },
     'import/resolver': {
       alias: [
+        ['@assets', './src/assets'],
         ['@components', './src/components'],
         ['@hooks', './src/hooks'],
         ['@lib', './src/lib'],

@@ -23,6 +23,7 @@
     "react-native-size-matters": "^0.3.1",
     "react-native-svg": "^12.1.0",
     "react-native-vector-icons": "^7.1.0",
+    "rebass-native": "^2.2.1",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {

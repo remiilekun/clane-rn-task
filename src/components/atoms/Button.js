@@ -14,7 +14,7 @@ const Wrapper = styled.TouchableOpacity`
 export const Button = ({ text, ...props }) => {
   return (
     <Wrapper activeOpacity={0.8} {...props}>
-      <Text color="white" fontWeight="bold" fontsize="md">
+      <Text color="white" fontWeight="bold" fontsize="sm">
         {text}
       </Text>
     </Wrapper>

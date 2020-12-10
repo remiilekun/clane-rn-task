@@ -3,9 +3,11 @@ import {
   createStackNavigator,
   TransitionPresets,
 } from '@react-navigation/stack';
-import HomeScreen from '@screens/Home';
 import { colors } from '@theme/colors';
 import { NavHeader } from '@components/molecules';
+
+import Home from '@screens/Home';
+import ReactHookForm from '@screens/ReactHookForm';
 
 const Stack = createStackNavigator();
 
@@ -26,7 +28,8 @@ function App() {
         ...TransitionPresets.SlideFromRightIOS,
       }}
     >
-      <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="ReactHookForm" component={ReactHookForm} />
     </Stack.Navigator>
   );
 }

@@ -12,7 +12,7 @@ const Wrapper = styled.View`
   justify-content: center;
 `;
 
-const Home = () => {
+const Home = ({ navigation }) => {
   return (
     <Wrapper>
       <SafeAreaView>
@@ -21,11 +21,10 @@ const Home = () => {
         </Box>
 
         <Box mb={20}>
-          <Button text="React Hook Form" />
-        </Box>
-
-        <Box>
-          <Button text="Custom" />
+          <Button
+            text="Continue"
+            onPress={() => navigation.navigate('ReactHookForm')}
+          />
         </Box>
       </SafeAreaView>
     </Wrapper>
